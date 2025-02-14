@@ -1,11 +1,12 @@
-package jpa;
+package domain;
 
+import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
 
-public class Utilisateur {
+@Entity
+public class Administrateur {
 	@Id
 	@GeneratedValue
 	 private Long id;
-
 }

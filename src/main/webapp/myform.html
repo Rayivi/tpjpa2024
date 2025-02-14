@@ -1,10 +1,69 @@
-<html>
-	<body>
-		<FORM Method="POST" Action="/UserInfo">
-			Name : 		<INPUT type="text" size="20" name="name"><BR>
-			Firstname : 	<INPUT type="text" size=”20” name=’firstname’><BR>
-			Age : 		<INPUT type=”text” size=”2” name=’age’><BR>
-					<INPUT type=”submit” value=”Send”>
-		</FORM>
-	</body>
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire Concert</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .form-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        input, select {
+            margin: 10px 0;
+            padding: 5px;
+            width: 100%;
+        }
+        input[type="submit"] {
+            background: blue;
+            color: white;
+            cursor: pointer;
+            border: none;
+            padding: 10px;
+        }
+        input[type="submit"]:hover {
+            background: darkblue;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <form method="POST" action="/UserInfo">
+            <label for="artist">Artiste :</label>
+            <select name="artist" id="artist">
+                <option value="artist1">Artiste 1</option>
+                <option value="artist2">Artiste 2</option>
+                <option value="artist3">Artiste 3</option>
+            </select><br>
+
+            <label for="date">Date :</label>
+            <input type="date" id="date" name="date"><br>
+
+            <label for="location">Lieu :</label>
+            <input type="text" id="location" name="location"><br>
+
+            <label for="description">Description :</label>
+            <input type="text" id="description" name="description"><br>
+
+            <label for="places">Nombre de sièges :</label>
+            <input type="number" id="places" name="places"><br>
+
+
+            <input type="submit" value="Envoyer">
+        </form>
+    </div>
+
+</body>
 </html>
+

@@ -2,6 +2,8 @@ package jpa;
 
 import java.util.Date;
 
+import domain.Artiste;
+import domain.Concert;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityTransaction;
 
