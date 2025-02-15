@@ -2,6 +2,8 @@ package jpa;
 
 import domain.Artiste;
 import domain.Concert;
+import domain.PremiumTicket;
+import domain.Ticket;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.EntityTransaction;
 import jakarta.persistence.criteria.CriteriaBuilder;
