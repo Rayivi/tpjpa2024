@@ -19,6 +19,8 @@ public class Artiste {
 	 @OneToMany (mappedBy = "artiste")
 	 private List<Concert> concerts;
 	 
+	 public Artiste() {}
+	 
 	public Artiste( String nom, String genreMusical) {
 		this.nom = nom;
 		this.genreMusical = genreMusical;
